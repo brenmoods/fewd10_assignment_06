@@ -1,0 +1,222 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+header {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+
+/* typography */
+body {
+    font-family: Arial, 'sans-serif';
+    background-color: #f1f1f1;
+}
+
+h1 {
+    font-size: 1.8em;
+    text-align: center;
+    color: #000000;
+}
+
+h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 1.5em;
+}
+
+header p {
+    font-family: Georgia, serif;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+legend {
+    font-size: 1.8em;
+    padding-top: 40px;
+}
+
+form {
+    border: 0;
+}
+
+fieldset {
+    border: 0;
+}
+
+#fname,
+#email,
+#company,
+#event {
+    border: 0;
+    width: 100%;
+    border-bottom: 1px solid #000000;
+    height: 40px;
+    margin-bottom: 10px;
+    background-color: #f8f8f8;
+}
+
+.clickStyle {
+    font-size: 1.2em;
+    font-family: Georgia, serif;
+    padding: 0 3% 0% 1%;
+}
+
+.text1,
+.text2 {
+    width: 100%;
+    border: 0;
+    height: 200px;
+    padding: 10px 10px 10px 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    margin-right:10px;
+}
+
+input:placeholder-shown {
+    font-family: Georgia, serif;
+    font-size: 1.5em;
+    padding: 30px 0 30px 10px;
+}
+
+.submit {
+    margin: 10%;
+}
+.submitButton {
+    font-size: 1.5em;
+    font-weight: bold;
+    height: 60px;
+    padding: 5px 40px 5px 40px;
+    border-radius: 3px;
+    background: #f1f1f1; 
+    border: 1px solid #000000;
+    margin:auto;
+    display:block;
+}
+
+.submitButton:hover {
+    background: white;
+    color: #000000; 
+}
+
+
+/* SINGLE COLUMN RESPONSIVE MOBILE */
+
+@media only screen and (max-width: 768px)
+{
+    
+.clickStyle
+ {
+    display: block;
+    line-height: 1.5em;
+}
+
+    
+    
+
+/*
+ * This grid system uses the zero-width font https://github.com/patrickkunka/zero-width
+ * to remove white space between inline blocks
+ */
+.grid {
+    font-family: 'zero-width';
+    font-size: 0;
+
+    max-width: 960px; /* change to suit */
+    margin: 0 auto; /* to center grid */
+}
+.grid > * {
+    font-family: 'helvetica', sans-serif; /* whatever font you want */
+    /* 
+     * if you are using a different base font-size then change this to be the same
+     * if you don't care about ie8 you can change this to
+     */
+    font-size: 16px; 
+}
+.full-width,
+.one-half,
+.one-quarter,
+.two-quarters,
+.three-quarters,
+.one-third,
+.two-thirds,
+.one-fifth,
+.two-fifths,
+.three-fifths,
+.four-fifths,
+.one-twelth,
+.two-twelths,
+.three-twelths,
+.four-twelths,
+.five-twelths,
+.six-twelths,
+.seven-twelths,
+.eight-twelths,
+.nine-twelths,
+.ten-twelths,
+.eleven-twelths {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px;
+}
+.full-width {
+    display: block;
+}
+.one-twelth {
+    width: 8.33333%;
+}
+.two-twelths {
+    width: 16.66667%;
+}
+.one-fifth {
+    width: 20%;
+}
+.one-quarter,
+.three-twelths {
+    width: 25%;
+}
+.one-third,
+.four-twelths {
+    width: 33.33333%;
+}
+.two-fifths {
+    width: 40%;
+}
+.five-twelths {
+    width: 41.66667%;
+}
+.one-half,
+.two-quarters,
+.six-twelths {
+    width: 50%;
+}
+.seven-twelths {
+    width: 58.33333%;
+}
+.three-fifths {
+    width: 60%;
+}
+.two-thirds,
+.eight-twelths {
+    width: 66.66667%;
+}
+.three-quarters,
+.nine-twelths {
+    width: 75%;
+}
+.four-fifths {
+    width: 80%;
+}
+.ten-twelths {
+    width: 83.33333%;
+}
+.eleven-twelths {
+    width: 91.66667%;
+}

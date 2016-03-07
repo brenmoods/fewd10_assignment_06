@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Relaxr contact</title>
+    <link type="text/css" rel="stylesheet" href="css/normalize.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="grid">
+            <div class="full-width">
+                <h1>Send us a message</h1>
+                <p>We usually respond within 1 business day.</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="grid">
+            <div class="full-width">
+                <form>
+                    <fieldset>
+                        <legend>General info</legend>
+                        <h2>Name *</h2>
+                        <input type="text" id="fname" name="fname" placeholder="First name">
+                        <h2>Email *</h2>
+                        <input type="text" id="email" name="email" placeholder="name@mydomain.com.au">
+                        <h2>Company</h2>
+                        <input type="text" id="company" name="company" placeholder="My company name">
+                        <h2>How did you hear about us?</h2>
+                        <input type="text" id="event" name="event" placeholder="Event">
+
+                        <h2>What would you like to discuss?</h2>
+                        <label class="clickStyle" for="topic1">
+                            <input type="radio" id="topic1" name="topic">Hiring Philosophy</label>
+                        <label class="clickStyle" for="topic2">
+                            <input type="radio" id="topic2" name="topic">Joining the philosophy team</label>
+                        <label class="clickStyle" for="topic3">
+                            <input type="radio" id="topic3" name="topic">Other</label>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Project info</legend>
+                        <h2>Which of our offerings interest you?</h2>
+                        <label class="clickStyle" for="inter1">
+                            <input type="checkbox" id="inter1" name="inter">Lean branding</label>
+                        <label class="clickStyle" for="inter2">
+                            <input type="checkbox" id="inter2" name="inter">4 week MVP</label>
+                        <label class="clickStyle" for="inter3">
+                            <input type="checkbox" id="inter3" name="inter">Product team</label>
+                        <label class="clickStyle" for="inter4">
+                            <input type="checkbox" id="inter4" name="inter">Design Sprint</label>
+                        <label class="clickStyle" for="inter5">
+                            <input type="checkbox" id="inter5" name="inter">Other</label>
+
+                        <h2>What is the problem you are trying to solve?</h2>
+                        <textarea class="text1" name="text1" rows="4" cols="50"></textarea>
+
+                        <h2>What do you hope our engagement will accomplish?</h2>
+                        <textarea class="text2" name="text2" rows="4" cols="50"></textarea>
+
+                        <h2>What is your budget range?</h2>
+                        <label class="clickStyle" for="budget1">
+                            <input type="radio" id="budget1" name="budget">Less than 40k</label>
+                        <label class="clickStyle" for="budget2">
+                            <input type="radio" id="budget2" name="budget">$40k - $100k</label>
+                        <label class="clickStyle" for="budget3">
+                            <input type="radio" id="budget3" name="budget">$100k - $250k</label>
+                        <label class="clickStyle" for="budget4">
+                            <input type="radio" id="budget4" name="budget">$250k - $500k</label>
+                        <label class="clickStyle" for="budget5">
+                            <input type="radio" id="budget5" name="budget">$500k +</label>
+
+                        <div class="submit">
+                            <input class="submitButton" type="button" name="submit" Value="Submit"/>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
