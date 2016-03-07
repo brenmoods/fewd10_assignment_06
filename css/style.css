@@ -80,6 +80,11 @@ input[type="checkbox"]{
     margin-right:10px;
 }
 
+input[type="text"] {
+    font-size: 1.5em;
+    padding: 30px 0 30px 10px;
+}
+
 input:placeholder-shown {
     font-family: Georgia, serif;
     font-size: 1.5em;
@@ -87,7 +92,7 @@ input:placeholder-shown {
 }
 
 .submit {
-    margin: 10%;
+    margin: 60px 0px 10px 0px;
 }
 .submitButton {
     font-size: 1.5em;
